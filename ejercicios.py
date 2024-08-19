@@ -271,7 +271,8 @@ def main():
         while True: 
             r = str(input('''¿Cuál ejercicios deseas hacer?
 (Si deseas reingresar la información de un ejercicio específico 
-borra la información interna de su archivo .json correspondiente)
+entre al archivo .json correspondiente y haga lo siguiente: 
+haga ctrl + a, presione borrar, haga ctrl + s y vuelva a la aplicación)
 (a) El primer ejercicio 
 (b) El segundo ejercicio 
 (c) El tercer ejercicio
