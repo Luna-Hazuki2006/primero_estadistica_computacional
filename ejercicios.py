@@ -275,7 +275,7 @@ borra la información interna de su archivo .json correspondiente)
 (a) El primer ejercicio 
 (b) El segundo ejercicio 
 (c) El tercer ejercicio
-(d) Salir de la aplicación (Si esto no funcion usa ctrl + c)
+(d) Salir de la aplicación (Si esto no funciona usa ctrl + c)
 '''))
             if r == 'a' or r == 'A' or r == '(a)' or r == '(A)': 
                 primero()
