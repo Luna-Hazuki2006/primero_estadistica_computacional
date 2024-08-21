@@ -20,6 +20,7 @@ def primero():
             except: 
                 print('¡Oh no! Ingresaste un dato que no era un número, ¡No te equivoques!')
                 return
+            todo = r
             json.dump(r, f, indent=4)
     todo = todo[0]['clase']
     print('++++++++++++++++++++++++++++++++++++++++++++')
@@ -73,6 +74,7 @@ def segundo():
             lista[0]['fsr%'] = list(map(lambda x: x * 100, lista[0]['fsr']))
             lista[0]['far%'] = list(map(lambda x: x * 100, lista[0]['far']))
             lista[0]['fi.xi^2'] = [(xi * fixi) for xi, fixi in zip(lista[0]['fi.xi'], lista[0]['xi'])]
+            todo = lista
             json.dump(lista, f, indent=4)
     mostrar_tabla(todo[0])
     total = todo[0]['fa'][-1]
