@@ -2,6 +2,8 @@ import json
 import matplotlib.pyplot as plt
 import math
 import numpy as np
+from pprint import pprint
+
 def primero(): 
     todo = []
     with open('primer.json', 'r+') as f: 
@@ -36,6 +38,9 @@ def primero():
     lista = [(v, k) for k, v in lista]
     print(f'Moda: {max(lista)[1]}')
     print('++++++++++++++++++++++++++++++++++++++++++++')
+    print('**********************************************')
+    print(f'Clases: {todo}')
+    print('**********************************************')
 
 def segundo(): 
     todo = []
@@ -131,6 +136,12 @@ def segundo():
     plt.title('Pastel de ejercicio 2')
     plt.show()
     print('++++++++++++++++++++++++++++++++++++++++++++')
+    print('**********************************************')
+    print('Clases: ')
+    pprint(todo[0]["clase"])
+    print('Frecuencias: ')
+    pprint(todo[0]["fi"])
+    print('**********************************************')
 
 def buscar_modales(fi : list): 
     lista = []
@@ -243,6 +254,12 @@ def tercero():
     desviacion = math.sqrt(varianza)
     print(f'Desviación estándar: {desviacion}')
     print('++++++++++++++++++++++++++++++++++++++++++++')
+    print('**********************************************')
+    print('Clases: ')
+    pprint(todo[0]["clase"])
+    print('Frecuencias: ')
+    pprint(todo[0]["fi"])
+    print('**********************************************')
 
 def mostrar_tabla(todo : dict): 
     total = len(todo['clase'])
