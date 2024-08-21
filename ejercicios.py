@@ -37,7 +37,15 @@ def primero():
         except: lista[esto] = 1
     lista = lista.items()
     lista = [(v, k) for k, v in lista]
-    print(f'Moda: {max(lista)[1]}')
+    modales = []
+    maximo = max(lista)[1]
+    while True: 
+        if maximo != max(lista)[1]: break
+        modales.append(max(lista)[1])
+        este = max(lista)
+        lista.remove(este)
+
+    print(f'Moda: {modales}')
     print('++++++++++++++++++++++++++++++++++++++++++++')
     print('**********************************************')
     print(f'Clases: {todo}')
