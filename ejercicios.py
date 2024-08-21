@@ -175,9 +175,9 @@ def tercero():
             print(maximo)
             rango = maximo - minimo 
             print(rango)
-            k = 1 + 3.3 * math.log(n)
+            k = 1 + 3.3 * math.log(rango)
             print(k)
-            amplitud = rango / k
+            amplitud = n / k
             if amplitud > int(amplitud): 
                 amplitud += 1
                 amplitud = int(amplitud)
