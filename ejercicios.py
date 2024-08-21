@@ -195,7 +195,6 @@ def tercero():
             while True: 
                 if minimo > maximo: break
                 para = minimo + amplitud - 1
-                if para > maximo: para = maximo
                 clase = {
                     'minimo': minimo, 
                     'maximo': para
