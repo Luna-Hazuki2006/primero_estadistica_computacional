@@ -180,17 +180,12 @@ def tercero():
             minimo = min(r)
             maximo = max(r)
             n = len(r)
-            print(n)
-            print(maximo)
             rango = maximo - minimo 
-            print(rango)
             k = 1 + 3.3 * math.log(n, 10)
-            print(k)
             amplitud = rango / k
             if amplitud > int(amplitud): 
                 amplitud += 1
                 amplitud = int(amplitud)
-            print(amplitud)
             lista = {}
             for esto in r: 
                 try: lista[esto] += 1
