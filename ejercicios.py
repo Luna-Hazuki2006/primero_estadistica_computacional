@@ -100,20 +100,15 @@ def segundo():
         modal = li + (d1 / (d1 + d2)) * a
         modales.append(modal)
     print(f'Modales: {modales}')
-    if total % 2 == 0: p33 = (33 / 100) * total
-    else: p33 = (33 / 100) * (total + 1)
+    p33 = (33 / 100) * total
     print(f'Percentil 33: {p33}')
-    if total % 2 == 0: p65 = (65 / 100) * total
-    else: p65 = (65 / 100) * (total + 1)
+    p65 = (65 / 100) * total
     print(f'Percentil 65: {p65}')
-    if total % 2 == 0: d2 = (20 / 100) * total
-    else: d2 = (20 / 100) * (total + 1)
+    d2 = (20 / 100) * total
     print(f'Decil 2: {d2}')
-    if total % 2 == 0: d9 = (90 / 100) * total
-    else: d9 = (90 / 100) * (total + 1)
+    d9 = (90 / 100) * total
     print(f'Decil 9: {d9}')
-    if total % 2 == 0: q3 = ((25 * 3) / 100) * total
-    else: q3 = ((25 * 3) / 100) * (total + 1)
+    q3 = ((25 * 3) / 100) * total
     print(f'Cuartil 3: {q3}')
     print('Para ver el siguiente gráfico cierre el actual')
     x = []
@@ -163,10 +158,11 @@ def tercero():
                 return
             minimo = min(r)
             maximo = max(r)
+            n = len(r)
             print(maximo)
             rango = maximo - minimo 
             print(rango)
-            k = 1 + 3.3 * math.log(rango)
+            k = 1 + 3.3 * math.log(n)
             print(k)
             amplitud = rango / k
             if amplitud > int(amplitud): 
@@ -209,6 +205,7 @@ def tercero():
             oficial[0]['fsr%'] = list(map(lambda x: x * 100, oficial[0]['fsr']))
             oficial[0]['far%'] = list(map(lambda x: x * 100, oficial[0]['far']))
             oficial[0]['fi.xi^2'] = [(xi * fixi) for xi, fixi in zip(oficial[0]['fi.xi'], oficial[0]['xi'])]
+            todo = oficial
             json.dump(oficial, f, indent=4)
     mostrar_tabla(todo[0])
     total = todo[0]['fa'][-1]
